@@ -1,0 +1,101 @@
+@import '../../common/mixins'
+@import '../../common/vars'
+
+/**
+ * CEPHALIC
+ */
+
+.cephalic
+    .fonone
+        background-image: url(../img/cephalic/fon1.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        max-height: 430px
+    &-title
+        h1
+            font-size: 60px
+            color: rgb(64, 64, 64)
+            line-height: 1.2
+            font-weight: 200
+    &-subtitle
+        margin-bottom: 35px
+        font-size: 24px
+        font-family: "Segoe UI"
+        color: rgb(64, 64, 64)
+        line-height: 1.2
+    &-btns
+        display: flex
+        justify-content: space-between
+        &_btn
+            width: 150px
+            display: flex
+            background-color: #66952f
+            align-items: center
+            border-radius: 0px 20px
+            padding: 10px 15px 10px 25px
+            a
+                color: #fff
+                text-decoration: none
+        .white
+            background-color: #fff
+            border: 1px solid #66952f
+            a
+                color: #66952f
+                text-decoration: none
+    &-btnsmob
+        display: none
+        justify-content: space-between
+        &_btn
+            width: 150px
+            display: flex
+            background-color: #66952f
+            align-items: center
+            border-radius: 0px 20px
+            padding: 10px 15px 10px 25px
+            a
+                color: #fff
+                text-decoration: none
+        .white
+            background-color: #fff
+            border: 1px solid #66952f
+            a
+                color: #66952f
+                text-decoration: none
+    .fontwo
+        position: relative
+        &::before
+            width: 100%
+            content: url(../img/cephalic/fon2.png)
+            position: absolute
+            top: -200px
+            left: -135px
+    &-image
+        margin-bottom: 20px
+        img
+            width: 100%
+
+@media (max-width: 1100px)
+    .cephalic
+        .fonone
+            margin-top: -170px
+        .fontwo
+            &::before
+                display: none
+        &-btns
+            display: none
+        &-btnsmob
+            display: flex
+        &-title
+            padding-top: 90px
+            h1
+                font-size: 36px
+                color: rgb(64, 64, 64)
+                line-height: 1.2
+                text-align: center
+        &-subtitle
+            font-size: 24px
+            font-family: "Segoe UI"
+            color: rgb(64, 64, 64)
+            line-height: 1.2
+            text-align: center
