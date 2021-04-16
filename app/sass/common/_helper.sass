@@ -1,0 +1,81 @@
+@import "vars"
+
+/**
+ * HELPER
+ */
+
+     
+
+.container
+    max-width: 1200px
+    padding: 0 15px
+    margin: 0 auto
+
+.content
+    flex: 1 0 auto
+
+.slider-control
+    content: url(../img/icons/r4.png)
+    position: absolute
+    top: -20px
+    right: -40px
+
+.slider-control-left
+    content: url(../img/icons/l4.png)
+    left: -40px
+
+.img_nab
+	transition: all 0.2s ease-in
+	cursor: pointer
+	&:hover
+		transform: scale(1.05)
+
+.content__cont
+    display: flex
+
+.crumps
+    margin-bottom: 30px
+    ul
+        display: flex
+        li
+            margin-right: 10px
+            a
+                position: relative
+                text-decoration: underline
+                &::after
+                    content: '-'
+                    position: absolute
+                    right: -8px
+.title
+    text-align: center
+    font-size: 40px
+    font-weight: 700
+    margin-bottom: 50px
+    h2
+    &:hover
+        color:#f25e5e
+
+.crumps
+    margin-bottom: 30px
+    ul
+        display: flex
+        li
+            margin-right: 10px
+            a
+                position: relative
+                text-decoration: underline
+                &::after
+                    content: '-'
+                    position: absolute
+                    right: -8px
+
+.boldtext
+    font-weight: 900
+    font-size: 14px
+.bgtext
+    background: #dfeef8 !important
+
+@media (max-width: 500px)
+    .title
+        font-size: 26px
+        margin-bottom: 20px

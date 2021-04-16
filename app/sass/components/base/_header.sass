@@ -1,0 +1,56 @@
+@import '../../common/mixins'
+@import '../../common/vars'
+
+/**
+ * HEADER
+ */
+
+.header
+	.menu
+		&-cont
+			margin-top: 50px
+			align-items: center
+			display: flex
+	&-logo
+		width: 200px
+		height: 60px
+		margin-right: 30px
+		display: flex
+		align-items: center
+	&-nav
+		ul
+			margin: 0 auto
+			display: flex
+			li
+				margin-right: 25px
+				a
+					text-decoration: none
+					font-size: 12px
+					color: rgb(64, 63, 60)
+					text-transform: uppercase
+					font-weight: 600
+	&-soc
+		display: flex
+		&_facebook
+			margin-right: 20px
+		&_insta
+			margin-right: 25px
+	&-callmodal
+		display: flex
+		justify-content: space-between
+		&_call
+			width: 190px
+			background-color: #66952f
+			display: flex
+			align-items: center
+			border-radius: 0px 20px
+			margin-right: 15px
+			text-align: center
+			a
+				margin: 0 auto
+				padding: 5px 10px
+				align-items: center
+				color: #fff
+				text-decoration: none
+// @media (max-width: 650px)
+// 	.header
