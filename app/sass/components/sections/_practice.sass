@@ -1,0 +1,56 @@
+@import '../../common/mixins'
+@import '../../common/vars'
+
+/**
+ * PRACTICE
+ */
+
+.practice
+    margin-bottom: 150px
+    &-title
+        text-align: right
+        margin-bottom: 40px
+        h2
+            font-size: 48px
+            color: rgb(134, 134, 134)
+            line-height: 1.2
+            font-weight: 200
+            position: relative
+            padding-right: 10px
+            &::after
+                content: url(../img/practice/strel.png)
+                position: absolute
+                top: -75px
+                right: 0
+            span
+                color: #66952f
+    &-items
+        &_item
+            margin-bottom: 13px
+            display: flex
+            &__img
+            &__text
+                padding: 30px 0 0 15px
+                &__title
+                    font-size: 16px
+                    color: rgb(102, 149, 47)
+                    line-height: 1.875
+                &__subtitle
+                    font-size: 14px
+                    color: rgb(64, 64, 64)
+                    line-height: 2
+
+@media (max-width: 1100px)
+    .practice
+        &-title
+            text-align: center
+            h2
+                font-size: 30px
+                position: relative
+                &::after
+                    content: url(../img/practice/mob/strel.png)
+                    position: absolute
+                    top: -95px
+                    left: 0
+                    right: 0
+                    margin: 0 auto

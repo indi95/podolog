@@ -33,12 +33,12 @@
             background-color: #66952f
             align-items: center
             border-radius: 0px 20px
-            padding: 10px 15px 10px 25px
             a
+                padding: 10px 15px 10px 25px
                 color: #fff
                 text-decoration: none
         .white
-            background-color: #fff
+            background-color: #ffffff2b
             border: 1px solid #66952f
             a
                 color: #66952f
@@ -70,6 +70,7 @@
             position: absolute
             top: -200px
             left: -135px
+            z-index: -1
     &-image
         margin-bottom: 20px
         img
@@ -77,8 +78,10 @@
 
 @media (max-width: 1100px)
     .cephalic
+        margin-bottom: 105px
         .fonone
             margin-top: -170px
+            z-index: -1
         .fontwo
             &::before
                 display: none

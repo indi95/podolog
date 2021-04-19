@@ -1,0 +1,59 @@
+@import '../../common/mixins'
+@import '../../common/vars'
+
+/**
+ * COURSES
+ */
+
+.courses
+    margin-bottom: 65px
+    &-title
+        margin-bottom: 40px
+        h2
+            font-size: 48px
+            color: rgb(134, 134, 134)
+            line-height: 1.2
+            font-weight: 200
+            position: relative
+            &::before
+                content: url(../img/courses/strel.png)
+                position: absolute
+                top: -137px
+                left: -13px
+
+    &-items
+        &_item
+            background-color: #fff
+            border-radius: 0px 20px
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2)
+            &__img
+                img
+                    width: 100%
+            &__txt
+                padding: 20px 15px 25px 20px
+                &__title
+                    font-size: 18px
+                    color: rgb(102, 149, 47)
+                    line-height: 1.667
+                    margin-bottom: 20px
+                &__subtitle
+                    font-size: 14px
+                    color: rgb(64, 64, 64)
+                    line-height: 1.714
+
+@media (max-width: 1100px)
+    .courses
+        &-title
+            text-align: center
+            h2
+                font-size: 30px
+                position: relative
+                &::before
+                    content: url(../img/courses/mob/strel.png)
+                    position: absolute
+                    top: -95px
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+        &-items
+            margin-bottom: 30px

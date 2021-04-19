@@ -52,22 +52,35 @@
 			text-align: center
 			a
 				margin: 0 auto
-				padding: 5px 10px
+				padding: 5px 25px
 				align-items: center
 				color: #fff
 				text-decoration: none
+	&-callmodalmob
+		display: none
 	&-burger
 		display: none
-
-
-
 
 @media (max-width: 1100px)
 	.header
 		.menu
 			&-cont
 				margin-top: 0
+		&-callmodalmob
+			align-items: center
+			margin: 0 auto
+			display: flex
+			&_call
+				margin-right: 10px
+				font-size: 12px
+				width: 100px
+				a
+					color: rgb(102, 149, 47)
+					text-transform: uppercase
+					text-decoration: none
 		&-logo
+			width: 140px
+			margin-right: 0
 			.logo
 				width: 90px
 		&-burger
@@ -80,6 +93,7 @@
 		&-soc
 			margin-left: auto
 			&_facebook
+				margin-left: 5px
 				margin-right: 10px
 			&_insta
 				margin-right: 0

@@ -1,0 +1,119 @@
+@import '../../common/mixins'
+@import '../../common/vars'
+
+/**
+ * COST
+ */
+
+.cost
+    &-title
+        margin-bottom: 40px
+        h2
+            font-size: 48px
+            color: rgb(134, 134, 134)
+            line-height: 1.2
+            font-weight: 200
+            position: relative
+            &::before
+                content: url(../img/cost/strel.png)
+                top: -145px
+                left: 0
+                position: absolute
+    &-item
+        border-radius: 0px 55px
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2)
+        &_img
+            img
+                width: 100%
+        &_title
+            margin-bottom: 30px
+            text-align: center
+            font-size: 24px
+            color: rgb(102, 149, 47)
+            line-height: 1.2
+        &_items
+            display: flex
+            padding: 40px 35px
+            justify-content: space-between
+            &__list
+                ul
+                    li
+                        border-bottom: 1px solid rgb(213, 213, 213)
+                        position: relative
+                        padding-left: 5px
+                        padding-bottom: 10px
+                        font-size: 15px
+                        color: rgb(64, 64, 64)
+                        &::before
+                            content: 'x'
+                            color: red
+                            position: absolute
+                            top: 10px
+                            left: -10px
+            &__value
+                padding: 25px 35px
+                background-color: #e7e8db
+                text-align: center
+                border-radius: 20px
+                align-items: center
+                p
+                    padding-top: 10px
+                    font-size: 30px
+                    color: rgb(102, 149, 47)
+                span
+                    font-size: 20px
+            &__balue
+                background-image: url(../img/cost/obj.png)
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center center     
+                padding: 25px 35px
+                text-align: center
+                border-radius: 20px
+                align-items: center
+                p
+                    padding-top: 10px
+                    font-size: 30px
+                    color: #fff
+                span
+                    color: #fff
+                    font-size: 20px
+    &-ser
+        text-align: center
+        &_img
+            margin-bottom: 25px
+        &_txt
+            font-size: 14px
+            color: rgb(80, 80, 80)
+            p
+                color: #66952f
+                font-size: 14px
+                font-weight: 600
+
+
+
+
+@media (max-width: 1100px)
+    .cost
+        &-title
+            text-align: center
+            h2
+                font-size: 30px
+                position: relative
+                &::before
+                    content: url(../img/practice/mob/strel.png)
+                    position: absolute
+                    top: -115px
+                    left: 0
+                    right: 0
+                    margin: 0 auto
+        &-item
+            &_items
+                display: block
+                &__value
+                    p
+                        font-size: 20px
+                    span
+                &__balue
+                    p 
+                    span

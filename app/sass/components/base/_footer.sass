@@ -5,12 +5,14 @@
  * FOOTER
  */
 
-footer
+.footer
+    margin-top: 200px
     background-image: url(../img/footer/bgfoot.png)
     background-repeat: no-repeat
-    height: 50px
     background-size: cover
     background-position: center center
+    .socmob
+        display: none
     .menu
         align-items: center
         display: flex
@@ -126,4 +128,66 @@ footer
             img
                 padding-bottom: 10px
 
-    // @media (max-width: 800px)
+@media (max-width: 1100px)
+    .footer
+        .socmob
+            display: flex
+            justify-content: center
+            margin-bottom: 60px
+            &_facebook
+                display: flex
+                align-items: center
+                margin-right: 25px
+                img
+                    margin-right: 10px
+                span
+                    font-size: 14px
+                    font-family: "Segoe UI"
+                    color: rgb(148, 148, 148)
+                    text-transform: uppercase
+
+            &_instagram
+                display: flex
+                align-items: center
+                img
+                    margin-right: 10px
+                span
+                    font-size: 14px
+                    font-family: "Segoe UI"
+                    color: rgb(148, 148, 148)
+                    text-transform: uppercase
+        .menu
+            margin-bottom: 35px
+            &-logo
+                margin: 0 auto
+            &-nav
+                display: none
+        .email
+            display: flex
+            flex-direction: column-reverse
+            margin: 0
+            &-conf
+                text-align: center
+                margin-bottom: 35px
+            &-form
+                margin-bottom: 40px
+                display: flex
+                justify-content: center
+                &_adress
+                    input
+                        width: 180px
+                &_watch
+                    input
+                        width: 120px
+        .podval
+            display: flex
+            flex-direction: column
+            &-rights
+                margin-bottom: 45px
+            &-soc
+                display: none
+            &-chebros
+                span
+                    display: none
+                img
+                    margin-bottom: 70px
